@@ -91,3 +91,5 @@ Emiliano Flórez
 Programa: DevOps y Contenedores (Docker)
 
 SENA CTMA
+
+[![Verificacion Proyecto](https://github.com/nano1217123/festival-devops-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/nano1217123/festival-devops-2026/actions/workflows/ci.yml)
