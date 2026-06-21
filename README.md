@@ -1,3 +1,5 @@
+[![Verificacion Proyecto](https://github.com/nano1217123/festival-devops-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/nano1217123/festival-devops-2026/actions/workflows/ci.yml)
+
 # Festival DevOps Music Fest
 
 ## Descripción
@@ -50,6 +52,38 @@ Ramas implementadas:
 * feature-landing
 * feature-backend
 
+## Integración Continua (GitHub Actions)
+
+El proyecto implementa un flujo de Integración Continua (CI) mediante GitHub Actions.
+
+### Workflow de Validación
+
+Archivo:
+
+```text
+.github/workflows/ci.yml
+```
+
+El workflow se ejecuta automáticamente cuando se realiza un push a la rama `main`.
+
+### Validaciones implementadas
+
+* Verificación de existencia de `frontend/index.html`
+* Verificación de existencia de `frontend/style.css`
+* Verificación de existencia de `backend/app.py`
+* Verificación de existencia de `README.md`
+
+Si alguno de estos archivos no existe, la ejecución falla automáticamente.
+
+### Beneficios
+
+* Detección temprana de errores.
+* Validación automática de la estructura del proyecto.
+* Mayor calidad del código antes de integrar cambios.
+* Automatización de tareas repetitivas.
+
+El estado de la ejecución puede consultarse mediante el badge ubicado en la parte superior de este documento.
+
 ## Docker
 
 Docker permite empaquetar la aplicación y sus dependencias en contenedores para facilitar su despliegue y ejecución.
@@ -91,5 +125,3 @@ Emiliano Flórez
 Programa: DevOps y Contenedores (Docker)
 
 SENA CTMA
-
-[![Verificacion Proyecto](https://github.com/nano1217123/festival-devops-2026/actions/workflows/ci.yml/badge.svg)](https://github.com/nano1217123/festival-devops-2026/actions/workflows/ci.yml)
